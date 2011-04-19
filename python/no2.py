@@ -1243,6 +1243,7 @@ def rare(corpus):
         if histogram[c] > 10 and ordering[c]:
             del ordering[c]
 
+    #pairs = [(j, c) for c, js in ordering.iteritems() for j in js]  # concise
     pairs = []
     for c, js in ordering.iteritems():
         for j in js:
